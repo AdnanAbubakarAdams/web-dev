@@ -15,7 +15,7 @@ controller.get("/:id", (req, res) => {
     const studentId = req.params.id;
 
     if (!/[0-9]/.test(studentId)) {
-      res.send("student id must tbe a number");
+      res.send("student id must be a number");
       return;
     }
 

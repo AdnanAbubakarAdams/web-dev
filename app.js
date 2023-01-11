@@ -1,8 +1,11 @@
 // import express
 const express = require('express');
+const cors = require("cors");
 
 // initialize app
 const app = express();
+
+app.use(cors());
 
 // utils
 const {orderedWordCounter, consecutiveVowels} = require(`./utils/Functions`)
